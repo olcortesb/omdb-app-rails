@@ -1,68 +1,68 @@
-omdbapp/*.rbc
-omdbapp/capybara-*.html
-omdbapp/.rspec
-omdbapp/db/*.sqlite3
-omdbapp/db/*.sqlite3-journal
-omdbapp/db/*.sqlite3-[0-9]*
-omdbapp/public/system
-omdbapp/coverage/
-omdbapp/spec/tmp
-omdbapp/*.orig
-omdbapp/rerun.txt
-omdbapp/pickle-email-*.html
+/omdbapp/*.rbc
+/omdbapp/capybara-*.html
+/omdbapp/.rspec
+/omdbapp/db/*.sqlite3
+/omdbapp/db/*.sqlite3-journal
+/omdbapp/db/*.sqlite3-[0-9]*
+/omdbapp/public/system
+/omdbapp/coverage/
+/omdbapp/spec/tmp
+/omdbapp/*.orig
+/omdbapp/rerun.txt
+/omdbapp/pickle-email-*.html
 
 # Ignore all logfiles and tempfiles.
-omdbapp/log/*
-omdbapp/tmp/*
-omdbapp/!/log/.keep
-omdbapp/!/tmp/.keep
+/omdbapp/log/*
+/omdbapp/tmp/*
+/omdbapp/!/log/.keep
+/omdbapp/!/tmp/.keep
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
-omdbapp/config/initializers/secret_token.rb
-omdbapp/config/master.key
-omdbapp/config/database.yml
+/omdbapp/config/initializers/secret_token.rb
+/omdbapp/config/master.key
+/omdbapp/config/database.yml
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
 
 # dotenv
 # TODO Comment out this rule if environment variables can be committed
-omdbapp/.env
+/omdbapp/.env
 
 ## Environment normalization:
-omdbapp/.bundle
-omdbapp/vendor/bundle
+/omdbapp/.bundle
+/omdbapp/vendor/bundle
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-omdbapp/.rvmrc
+/omdbapp/.rvmrc
 
 # if using bower-rails ignore default bower_components path bower.json files
-omdbapp/vendor/assets/bower_components
-omdbapp/*.bowerrc
-omdbapp/bower.json
+/omdbapp/vendor/assets/bower_components
+/omdbapp/*.bowerrc
+/omdbapp/bower.json
 
 # Ignore pow environment settings
-omdbapp/.powenv
+/omdbapp/.powenv
 
 # Ignore Byebug command history file.
-omdbapp/.byebug_history
+/omdbapp/.byebug_history
 
 # Ignore node_modules
-omdbapp/node_modules/
+/omdbapp/node_modules/
 
 # Ignore precompiled javascript packs
-omdbapp/public/packs
-omdbapp/public/packs-test
-omdbapp/public/assets
+/omdbapp/public/packs
+/omdbapp/public/packs-test
+/omdbapp/public/assets
 
 # Ignore yarn files
-omdbapp/yarn-error.log
-omdbapp/yarn-debug.log*
-omdbapp/.yarn-integrity
+/omdbapp/yarn-error.log
+/omdbapp/yarn-debug.log*
+/omdbapp/.yarn-integrity
 
 # Ignore uploaded files in development
-omdbapp/storage/*
-omdbapp/!/storage/.keep
+/omdbapp/storage/*
+/omdbapp/!/storage/.keep
