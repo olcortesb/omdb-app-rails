@@ -66,3 +66,4 @@
 # Ignore uploaded files in development
 /omdbapp/storage/*
 /omdbapp/!/storage/.keep
+.DS_Store
