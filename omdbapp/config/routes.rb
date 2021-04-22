@@ -13,5 +13,7 @@ Rails.application.routes.draw do
     get 'reset_password', to: 'users/passwords#edit'
   end
 
-  root to: 'application#home'
+  get '/search' => 'movies#search'
+
+  root to: 'movies#index'
 end
