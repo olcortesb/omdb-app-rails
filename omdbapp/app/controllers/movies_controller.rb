@@ -5,12 +5,14 @@ class MoviesController < ApplicationController
     end
 
     def search
-        movies = find_movies(params[:movie])
-        
-        unless movies
+        movies = find_movies(params[:movie] || "")
+
+        if movies["Response"] == "False"
             flash[:alert] = "Pelicula no encontrada"
-            return render action: :index
+            return redirect_to root_path
         end
+
+        #persistir a db
 
         @movie = movies
         #@weather = find_weather(@country['capital'], @country['alpha2Code'])
@@ -30,7 +32,7 @@ class MoviesController < ApplicationController
 
     def find_movies(name)
       request_api(
-        "http://www.omdbapi.com/?i=tt3896198&apikey=9a044c5c&t="+name
+        "http://www.omdbapi.com/?i=tt3896198&apikey=9a044c5c&t=#{name}"
       )
     end
 end
