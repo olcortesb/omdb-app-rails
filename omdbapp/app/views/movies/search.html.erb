@@ -1,17 +1,36 @@
 <div class="container">
-  <div class="row mt-5">
+<!--  <div class="row mt-5">
     <div class="col-lg-6">
       <h4>Info de peliculas</h4>
       <dl>
         <dt>Titulo</dt>
-        <dd><%= @movie['Title'] %></dd>
+        <dd><%#= @movie['Title'] %></dd>
         <dt>Year</dt>
-        <dd><%= @movie['Year']%></dd>
+        <dd><%#= @movie['Year']%></dd>
         <dt>Runtime</dt>
-        <dd><%= @movie['Runtime']%></dd>
+        <dd><%#= @movie['Runtime']%></dd>
         <dt>Diretor</dt>
-        <dd><%= @movie['Director']%></dd>
+        <dd><%#= @movie['Director']%></dd>
       </dl>
+    </div>
+  </div>-->
+
+  <div class="card " style="width: 18rem;">
+    <img src="<%= @movie['Poster'] %>" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= @movie['Title'] %></h5>
+      <p class="card-text"><%= @movie['Plot'] %></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Title: <%= @movie['Title'] %></li>
+      <li class="list-group-item">Year: <%= @movie['Year'] %></li>
+      <li class="list-group-item">Runtime: <%= @movie['Runtime'] %></li>
+      <li class="list-group-item">Director: <%= @movie['Director'] %></li>
+    </ul>
+    <div class="card-body">
+      <a <%= link_to "Back", :back, class: "card-link" %> </a>
+<!--      <a href="#" class="card-link">Another link</a>-->
     </div>
   </div>
 </div>
+
