@@ -2,6 +2,7 @@
 
 class MoviesController < ApplicationController
     def index
+      @movies = Movie.all
     end
 
     def search
@@ -12,7 +13,21 @@ class MoviesController < ApplicationController
             return redirect_to root_path
         end
 
-        #persistir a db
+        Movie.find_or_create_by(imdb_id: movies['imdbID']) do |m|
+          m.title = movies['Title']
+          m.year = movies['Year']
+          m.rate = movies['Rated']
+          m.released = movies['Released']
+          m.runtime = movies['Runtime']
+          m.director = movies['Director']
+          m.writer = movies['Writer']
+          m.plot = movies['Plot']
+          m.language = movies['Language']
+          m.country = movies['Country']
+          m.poster = movies['Poster']
+          m.imdb_id = movies['imdbID']
+          m.production = movies['Production']
+        end
 
         @movie = movies
         #@weather = find_weather(@country['capital'], @country['alpha2Code'])
