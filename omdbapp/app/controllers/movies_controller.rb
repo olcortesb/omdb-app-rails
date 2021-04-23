@@ -19,7 +19,7 @@ class MoviesController < ApplicationController
                   end
 
     unless movie_local
-      movies = find_movies(params[:movie] || "")
+      movies = find_movies(params[:movie] || "",params[:year])
 
       if movies["Response"] == "False"
         flash[:alert] = "Pelicula no encontrada"
@@ -65,9 +65,9 @@ class MoviesController < ApplicationController
     JSON.parse(response.body, object_class: OpenStruct)
   end
 
-  def find_movies(name)
+  def find_movies(name,year)
     request_api(
-      "http://www.omdbapi.com/?i=tt3896198&apikey=9a044c5c&t=#{name}"
+      "http://www.omdbapi.com/?i=tt3896198&apikey=9a044c5c&t=#{name}&y=#{year}"
     )
   end
 end
