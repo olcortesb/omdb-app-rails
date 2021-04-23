@@ -2,7 +2,7 @@
 
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all
+    @movies = Movie.all.order(created_at: :desc)
   end
 
   def search
@@ -50,6 +50,7 @@ class MoviesController < ApplicationController
       m.poster = movies['Poster']
       m.imdb_id = movies['imdbID']
       m.production = movies['Production']
+      m.imdb_rating = movies['imdbRating']
     end
     return movie_save
   end

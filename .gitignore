@@ -67,3 +67,7 @@
 /omdbapp/storage/*
 /omdbapp/!/storage/.keep
 .DS_Store
+
+
+# Idea
+.idea
