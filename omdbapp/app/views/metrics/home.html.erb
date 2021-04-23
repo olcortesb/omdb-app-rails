@@ -80,11 +80,13 @@
       <div class="card p-3 text-end">
         <figure class="mb-0">
           <blockquote class="blockquote">
-            <p>A well-known quote, contained in a blockquote element.</p>
+            <p>¿De que año son las peliculas buscadas?</p>
           </blockquote>
-          <figcaption class="blockquote-footer mb-0 text-muted">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
+          <ul class="list-group list-group-flush">
+            <% @by_year.each do |y| %>
+              <li class="list-group-item"><%= y[0] %>: <%= y[1].count %></li>
+            <% end %>
+          </ul>
         </figure>
       </div>
     </div>

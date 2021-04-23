@@ -16,5 +16,7 @@ class MetricsController < ApplicationController
       end
     }
 
+    @by_year = Movie.all.group_by(&:year)
+
   end
 end
