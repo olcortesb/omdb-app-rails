@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
   get '/home' => 'application#home'
 
+  get '/metric' => 'metrics#home'
+
   root to: 'movies#index'
 end
