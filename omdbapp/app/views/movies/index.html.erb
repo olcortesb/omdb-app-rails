@@ -16,6 +16,8 @@
           <div class="form-group">
             <%= label_tag :movie, 'Busqueda de una pelicula '%>
             <%= text_field_tag :movie, "", placeholder: 'Ej. Blade', class: 'form-control', required: true %>
+            <%= text_field_tag :year, "", placeholder: 'Ej. 1984', class: 'form-control', required: false %>
+
           </div>
 
           <%= button_tag 'Search', class: 'btn btn-success btn-block' %>

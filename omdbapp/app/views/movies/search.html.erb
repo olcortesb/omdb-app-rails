@@ -1,31 +1,15 @@
 <div class="container">
-<!--  <div class="row mt-5">
-    <div class="col-lg-6">
-      <h4>Info de peliculas</h4>
-      <dl>
-        <dt>Titulo</dt>
-        <dd><%#= @movie['Title'] %></dd>
-        <dt>Year</dt>
-        <dd><%#= @movie['Year']%></dd>
-        <dt>Runtime</dt>
-        <dd><%#= @movie['Runtime']%></dd>
-        <dt>Diretor</dt>
-        <dd><%#= @movie['Director']%></dd>
-      </dl>
-    </div>
-  </div>-->
-
   <div class="card " style="width: 18rem;">
-    <img src="<%= @movie['Poster'] %>" class="card-img-top" alt="...">
+    <img src="<%= @movie.poster %>" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title"><%= @movie['Title'] %></h5>
-      <p class="card-text"><%= @movie['Plot'] %></p>
+      <h5 class="card-title"><%= @movie.title %></h5>
+      <p class="card-text"><%= @movie.plot %></p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Title: <%= @movie['Title'] %></li>
-      <li class="list-group-item">Year: <%= @movie['Year'] %></li>
-      <li class="list-group-item">Runtime: <%= @movie['Runtime'] %></li>
-      <li class="list-group-item">Director: <%= @movie['Director'] %></li>
+      <li class="list-group-item">Title: <%= @movie.title %></li>
+      <li class="list-group-item">Year: <%= @movie.year %></li>
+      <li class="list-group-item">Runtime: <%= @movie.runtime %></li>
+      <li class="list-group-item">Director: <%= @movie.director%></li>
     </ul>
     <div class="card-body">
       <a <%= link_to "Back", :back, class: "card-link" %> </a>
