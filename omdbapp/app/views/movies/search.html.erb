@@ -1,19 +1,32 @@
 <div class="container">
-  <div class="card " style="width: 18rem;">
-    <img src="<%= @movie.poster %>" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title"><%= @movie.title %></h5>
-      <p class="card-text"><%= @movie.plot %></p>
+  <br>
+  <div  class ="row">
+    <div class="col-sm-4">
+      <div class="card " >
+        <img src="<%= @movie.poster %>" class="card-img-top" alt="...">
+      </div>
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Title: <%= @movie.title %></li>
-      <li class="list-group-item">Year: <%= @movie.year %></li>
-      <li class="list-group-item">Runtime: <%= @movie.runtime %></li>
-      <li class="list-group-item">Director: <%= @movie.director%></li>
-    </ul>
-    <div class="card-body">
-      <a <%= link_to "Back", :back, class: "card-link" %> </a>
-<!--      <a href="#" class="card-link">Another link</a>-->
+    <div class="col-sm-4">
+      <div class="card ">
+        <div class="card-body">
+          <h5 class="card-title"><%= @movie.title %></h5>
+          <p class="card-text"><%= @movie.plot %></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card " >
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Title: <%= @movie.title %></li>
+          <li class="list-group-item">Year: <%= @movie.year %></li>
+          <li class="list-group-item">Runtime: <%= @movie.runtime %></li>
+          <li class="list-group-item">Director: <%= @movie.director%></li>
+        </ul>
+        <div class="card-body">
+          <a <%= link_to "Back", :back, class: "card-link" %> </a>
+          <!--      <a href="#" class="card-link">Another link</a>-->
+        </div>
+      </div>
     </div>
   </div>
 </div>
