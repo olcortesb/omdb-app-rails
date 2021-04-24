@@ -32,7 +32,7 @@ class MoviesController < ApplicationController
   private
 
   def save_movie(movies)
-    movie_save = Movie.find_or_create_by(imdb_id: movies['imdbID']) do |m|
+    Movie.find_or_create_by(imdb_id: movies['imdbID']) do |m|
       m.title = movies['Title']
       m.year = movies['Year']
       m.rate = movies['Rated']
@@ -48,7 +48,6 @@ class MoviesController < ApplicationController
       m.production = movies['Production']
       m.imdb_rating = movies['imdbRating']
     end
-    return movie_save
   end
 
   def request_api(url)
@@ -59,6 +58,7 @@ class MoviesController < ApplicationController
       }
     )
     return nil if response.status != 200
+
     JSON.parse(response.body, object_class: OpenStruct)
   end
 
