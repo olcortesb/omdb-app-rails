@@ -27,10 +27,14 @@ gem 'jbuilder', '~> 2.7'
 # call external api
 gem 'excon'
 
+gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
+
+gem 'rexml', '~> 3.2', '>= 3.2.5'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-#gem 'devise'
+# gem 'devise'
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 
 gem 'omniauth-github'
@@ -50,8 +54,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'ruby-debug-ide'
   gem 'debase'
+  gem 'ruby-debug-ide'
 end
 
 group :test do
@@ -59,9 +63,9 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
+  #  gem 'debase'
+  #  gem 'ruby-debug-ide'
   gem 'webdrivers'
-  gem 'ruby-debug-ide'
-  gem 'debase'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
