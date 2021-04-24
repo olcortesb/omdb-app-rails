@@ -12,11 +12,7 @@ class MoviesController < ApplicationController
       movie_local = movies_local.find { |m| m.year == params[:year] }
     end
 
-    movie_local = if movie_local then
-                    movie_local
-                  else
-                    movies_local.first
-                  end
+    movie_local ||= movies_local.first
 
     unless movie_local
       movies = find_movies(params[:movie] ,params[:year])
