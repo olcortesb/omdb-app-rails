@@ -51,7 +51,30 @@ rspec
 
 ## Despliegue 📦
 
+La aplicacion se desplego para su prueba y validacion en Heroku (https://www.heroku.com/)
+
+Para deplegar en Heroku Teniendo una cuenta en Heroku , ejecutar los siguientes comandos:
 ```
+#Loguearce en Heroku
+$heroku login
+
+#Crear aplicacion en Heroku
+$heroku create
+
+#Verificar que el repositorio de Heroku esta agregado
+$git config --list --local | grep heroku
+
+#Publicando la aplicacion
+$git push heroku main
+
+#Corriendo las migraciones en el servidor de Heroku
+$heroku run rake db:migrate
+
+#Verificando que esta corriendo la aplicacion
+$heroku ps
+
+#Abriendo la pagina donde esta deployada la aplicacion
+$heroku open
 
 ```
 ## Construido con 🛠️
