@@ -8,7 +8,6 @@ class MetricsController < ApplicationController
     @rating = Movie.where("imdb_rating > ?", 0).order(imdb_rating: :desc).take
     @year_average = Integer(Movie.average(:year))
 
-
     all_movie = Movie.where("runtime != ?", 'N/A')
     runtime_max = 0
     avg = 0
