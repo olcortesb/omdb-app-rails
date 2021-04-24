@@ -3,7 +3,7 @@
 class MetricsController < ApplicationController
   def home
     @latest = Movie.all.order(:year).take
-    @recent = Movie.all.order(created_at: :desc).take
+    @recent = Movie.all.most_recent.take
     @count = Movie.all.count
     @rating = Movie.where("imdb_rating > ?", 0).order(imdb_rating: :desc).take
     @year_average = Integer(Movie.average(:year))
