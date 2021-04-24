@@ -5,25 +5,42 @@ ofrece un panel de metricas.
 
 ## Comenzando 🚀
 
-- Desarrollador en Rails 6.0.0
-- Ruby 3.0.0
+Demo de la Aplicacion
 
-⛵ **Deployment** para conocer como desplegar el proyecto.
+
+
+[![Watch the video](https://img.youtube.com/vi/eWz2GJKQKGc/3.jpg)](https://youtu.be/eWz2GJKQKGc)
 
 
 
 ### Arquitectura ⛺
 
-Arquitectura MVC
+Arquitectura MVC provista por el framework Rails
 
 ### Pre-requisitos 📋🔧
 
-rails
+ruby
+```
+$ruby --version
+ruby 3.0.0p0
 ```
 
+rails
+```
+$rails --version
+Rails 6.0.3.6
 ```
 postgres
 ```
+$postgres --version
+postgres (PostgreSQL) 13.2
+```
+
+⛵ **Lanzar la aplicacion localmente** 
+```
+$bundle install
+$rails db:migrate
+$rails server
 ```
 
 ## Ejecutando las pruebas ⚙️
@@ -38,6 +55,9 @@ rspec
 
 ```
 ## Construido con 🛠️
+
+- Desarrollador en Rails 6.0.0
+- Ruby 3.0.0
 
 💎  **Dependencias / gemas**
 
