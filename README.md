@@ -1,52 +1,34 @@
 # omdb-app-rails
 
-Aplicacion de busqueda de peliculas utilizando como fuente la api:
-http://www.omdbapi.com
+Aplicacion de busqueda de peliculas utilizando como fuente la api: http://www.omdbapi.com, permite la busqueda por nombre y por año; 
+ofrece un panel de metricas.
 
 ## Comenzando 🚀
 
-- Desarrollador en Rails
+- Desarrollador en Rails 6.0.0
+- Ruby 3.0.0
 
 ⛵ **Deployment** para conocer como desplegar el proyecto.
 
-Organizacion de Archivos (Detalle entre parentesis)
 
 
 ### Arquitectura ⛺
 
-Se opto por una arquitectura serverless basado en un Api gateway un Bucket S3 y una Lambda.
-
+Arquitectura MVC
 
 ### Pre-requisitos 📋🔧
 
-Node.js
+rails
 ```
 
 ```
-Pulumi (mac)
+postgres
 ```
-```
-instalacion otros sistemas: https://www.pulumi.com/docs/get-started/install/
-
-AWS
-
-Cuenta en AWS y Clave de acceso CLI
-
-Exportar claves de acceso AWS
-
-```
-
-```
-
-Mocha
-
-```
-
 ```
 
 ## Ejecutando las pruebas ⚙️
 ```
-
+rspec
 ```
 
 
@@ -57,11 +39,13 @@ Mocha
 ```
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+💎  **Dependencias / gemas**
 
-* [Pulumi](http://www.dropwizard.io/1.0.2/docs/) - El framework de infraestructura como codigo
-* [Node.js](https://maven.apache.org/) - Runtime
-* [AWS](https://rometools.github.io/rome/) - Cloud
+- [Device](https://rubygems.org/gems/devise/versions/4.2.0?locale=es) : Para Login y gestion de usarios
+- [Rspec](https://rubygems.org/gems/rspec): Testing
+- [excon](https://rubygems.org/gems/excon): Cliente Api
+- [ruby-debug-ide](https://rubygems.org/gems/ruby-debug-ide): Debug
+
 
 ## Autor ✒️
 
@@ -69,9 +53,9 @@ Oscar Cortes @olcortesb
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia GNU v3 - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia MIT
 
-## Expresiones de Gratitud 🎁
+## Agradecimiento 🎁
 
 Como siempre... a la familia!
 Por prestarme tiempo de su tiempo!
