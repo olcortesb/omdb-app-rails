@@ -19,7 +19,7 @@ class MoviesController < ApplicationController
                   end
 
     unless movie_local
-      movies = find_movies(params[:movie] || "",params[:year])
+      movies = find_movies(params[:movie] ,params[:year])
 
       if movies["Response"] == "False"
         flash[:alert] = "Pelicula no encontrada"
