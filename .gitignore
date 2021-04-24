@@ -1,71 +1,71 @@
-/omdbapp/*.rbc
-/omdbapp/capybara-*.html
-/omdbapp/.rspec
-/omdbapp/db/*.sqlite3
-/omdbapp/db/*.sqlite3-journal
-/omdbapp/db/*.sqlite3-[0-9]*
-/omdbapp/public/system
-/omdbapp/coverage/
-/omdbapp/spec/tmp
-/omdbapp/*.orig
-/omdbapp/rerun.txt
-/omdbapp/pickle-email-*.html
+*.rbc
+capybara-*.html
+.rspec
+db/*.sqlite3
+db/*.sqlite3-journal
+db/*.sqlite3-[0-9]*
+public/system
+coverage
+spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
 
 # Ignore all logfiles and tempfiles.
-/omdbapp/log/*
-/omdbapp/tmp/*
-/omdbapp/!/log/.keep
-/omdbapp/!/tmp/.keep
+log/*
+tmp/*
+!/log/.keep
+!/tmp/.keep
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
-/omdbapp/config/initializers/secret_token.rb
-/omdbapp/config/master.key
-/omdbapp/config/database.yml
+config/initializers/secret_token.rb
+config/master.key
+config/database.yml
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
 
 # dotenv
 # TODO Comment out this rule if environment variables can be committed
-/omdbapp/.env
+.env
 
 ## Environment normalization:
-/omdbapp/.bundle
-/omdbapp/vendor/bundle
+.bundle
+vendor/bundle
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-/omdbapp/.rvmrc
+.rvmrc
 
 # if using bower-rails ignore default bower_components path bower.json files
-/omdbapp/vendor/assets/bower_components
-/omdbapp/*.bowerrc
-/omdbapp/bower.json
+vendor/assets/bower_components
+*.bowerrc
+bower.json
 
 # Ignore pow environment settings
-/omdbapp/.powenv
+.powenv
 
 # Ignore Byebug command history file.
-/omdbapp/.byebug_history
+.byebug_history
 
 # Ignore node_modules
-/omdbapp/node_modules/
+node_modules/
 
 # Ignore precompiled javascript packs
-/omdbapp/public/packs
-/omdbapp/public/packs-test
-/omdbapp/public/assets
+public/packs
+public/packs-test
+public/assets
 
 # Ignore yarn files
-/omdbapp/yarn-error.log
-/omdbapp/yarn-debug.log*
-/omdbapp/.yarn-integrity
+yarn-error.log
+yarn-debug.log*
+.yarn-integrity
 
 # Ignore uploaded files in development
-/omdbapp/storage/*
-/omdbapp/!/storage/.keep
+storage/*
+!/storage/.keep
 .DS_Store
 
 
