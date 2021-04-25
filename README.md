@@ -96,7 +96,7 @@ Oscar Cortes @olcortesb
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia MIT
+Este proyecto está bajo la Licencia [MIT](LICENSE)
 
 ## Agradecimiento 🎁
 
