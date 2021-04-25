@@ -13,7 +13,10 @@ Rails.application.routes.draw do
     get 'reset_password', to: 'users/passwords#edit'
   end
 
-  get '/search' => 'movies#search'
+  # get '/search' => 'movies#search'
+  resources :movies, only: [:index, :show] do
+    get :search, on: :collection
+  end
 
   get '/home' => 'application#home'
 

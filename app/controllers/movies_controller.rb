@@ -6,28 +6,18 @@ class MoviesController < ApplicationController
   end
 
   def search
-    movies_local = Movie.where("title LIKE :query", query: params[:movie])
+    movies = find_movies(params[:movie], params[:year])
 
-    if params[:year]
-      movie_local = movies_local.find { |m| m.year == params[:year] }
-    end
+    return redirect_to root_path, alert: 'Película no encontrada' if (movies['Response'] == 'False')
 
-    movie_local ||= movies_local.first
-
-    unless movie_local
-      movies = find_movies(params[:movie] ,params[:year])
-
-      if movies["Response"] == "False"
-        flash[:alert] = "Pelicula no encontrada"
-        return redirect_to root_path
-      end
-
-      @movie = save_movie(movies)
-      return
-    end
-
-    @movie = movie_local
+    movie = save_movie(movies)
+    redirect_to movie_path(movie.imdb_id)
   end
+
+  def show
+    @movie = Movie.find_by(imdb_id: params[:id])
+  end
+
 
   private
 

@@ -1,5 +1,5 @@
 <tr>
-    <td><%= link_to "Link", search_path(:movie => movie.title) %></td>
+    <td><%= link_to "Link", movie_path(:id => movie.imdb_id) %></td>
     <td><%= movie.title %></td>
     <td><%= movie.year %></td>
     <td><%= movie.director %></td>
