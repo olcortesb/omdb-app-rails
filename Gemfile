@@ -68,6 +68,8 @@ group :test do
   #  gem 'debase'
   #  gem 'ruby-debug-ide'
   gem 'webdrivers'
+  gem 'factory_bot_rails'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
