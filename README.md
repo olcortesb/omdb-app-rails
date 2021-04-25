@@ -20,32 +20,32 @@ Arquitectura MVC provista por el framework Rails
 ### Pre-requisitos 📋🔧
 
 ruby
-```
+``` bash
 $ruby --version
 ruby 3.0.0p0
 ```
 
 rails
-```
+``` bash
 $rails --version
 Rails 6.0.3.6
 ```
 postgres
-```
+``` bash
 $postgres --version
 postgres (PostgreSQL) 13.2
 ```
 
 ⛵ **Lanzar la aplicacion localmente** 
-```
+``` bash
 $bundle install
 $rails db:migrate
 $rails server
 ```
 
 ## Ejecutando las pruebas ⚙️
-```
-rspec
+``` bash
+$rspec
 ```
 
 
@@ -54,7 +54,7 @@ rspec
 La aplicacion se desplego para su prueba y validacion en Heroku (https://www.heroku.com/)
 
 Para deplegar en Heroku Teniendo una cuenta en Heroku , ejecutar los siguientes comandos:
-```
+``` bash
 #Loguearce en Heroku
 $heroku login
 
