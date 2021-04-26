@@ -5,12 +5,16 @@ ofrece un panel de metricas.
 
 ## Comenzando 🚀
 
-Demo de la Aplicación
+Demo de la Aplicación (Web)
 
 
 
 [![Watch the video](https://img.youtube.com/vi/eWz2GJKQKGc/3.jpg)](https://youtu.be/j1mOr7-5sJM)
 
+Demo de la Aplicación (Responsive)
+
+
+[![Watch the video](https://img.youtube.com/vi/goVMTUtG4gA/3.jpg)](https://youtu.be/goVMTUtG4gA)
 
 
 ### Arquitectura ⛺
