@@ -5,7 +5,7 @@ ofrece un panel de metricas.
 
 ## Comenzando 🚀
 
-Demo de la Aplicacion
+Demo de la Aplicación
 
 
 
@@ -44,6 +44,16 @@ $rails server
 ```
 
 ## Ejecutando las pruebas ⚙️
+
+El primer paso es crear la base de test
+
+``` bash
+rails db:migrate RAILS_ENV=test
+```
+
+para ejecutar las pruebas es necesario agregar datos a la base
+no estas mokeados los datos por que no esta corriendo en un entorno de integracion continua
+
 ``` bash
 $rspec
 ```
@@ -77,6 +87,12 @@ $heroku ps
 $heroku open
 
 ```
+Para actualizar la aplicacion ya publicada
+``` bash
+$git push heroku main
+
+```
+
 ## Construido con 🛠️
 
 - Desarrollador en Rails 6.0.0
