@@ -55,7 +55,11 @@ para ejecutar las pruebas es necesario agregar datos a la base
 no estas mokeados los datos por que no esta corriendo en un entorno de integracion continua
 
 ``` bash
-$rspec
+$rake spec
+.............
+
+Finished in 0.51705 seconds (files took 2.64 seconds to load)
+13 examples, 0 failures
 ```
 
 
