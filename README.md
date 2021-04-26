@@ -116,7 +116,7 @@ $git push heroku main
 
 ## Autor ✒️
 
-Oscar Cortes @olcortesb
+Oscar Cortes [@olcortesb](https://github.com/olcortesb) 
 
 ## Licencia 📄
 

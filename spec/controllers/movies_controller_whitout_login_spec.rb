@@ -5,10 +5,6 @@ describe 'MoviesControllerWhitoutLogin' do
     @controller = MoviesController.new
   end
 
-  after do
-    # Do nothing
-  end
-
   it 'fount indez' do
     get :index
     expect(response).to have_http_status(:found)
