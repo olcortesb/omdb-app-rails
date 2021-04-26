@@ -1,7 +1,7 @@
 # omdb-app-rails
 
-Aplicacion de busqueda de peliculas utilizando como fuente la api: http://www.omdbapi.com, permite la busqueda por nombre y por año; 
-ofrece un panel de metricas.
+MVP de aplicación de búsqueda de películas utilizando como fuente la API: http://www.omdbapi.com, permite la búsqueda por nombre y por año, 
+ofreciendo un panel de métricas y estadisticas.
 
 ## Comenzando 🚀
 
@@ -29,6 +29,12 @@ $ruby --version
 ruby 3.0.0p0
 ```
 
+gem
+``` bash
+gem --version
+3.2.3
+```
+
 rails
 ``` bash
 $rails --version
@@ -40,7 +46,7 @@ $postgres --version
 postgres (PostgreSQL) 13.2
 ```
 
-⛵ **Lanzar la aplicacion localmente** 
+⛵ **Lanzar la aplicación localmente** 
 ``` bash
 $bundle install
 $rails db:migrate
@@ -49,15 +55,15 @@ $rails server
 
 ## Ejecutando las pruebas ⚙️
 
-El primer paso es crear la base de test
+El primer paso es crear la base de test.
 
 ``` bash
 rails db:migrate RAILS_ENV=test
 ```
 
-para ejecutar las pruebas es necesario agregar datos a la base
-no estas mokeados los datos por que no esta corriendo en un entorno de integracion continua
+Para ejecutar las pruebas es necesario agregar datos a la base de datos.
 
+Si corriera el deployment en un entorno de integración continua es necesario realizar un Mock de los datos.
 ``` bash
 $rake spec
 .............
@@ -69,9 +75,11 @@ Finished in 0.51705 seconds (files took 2.64 seconds to load)
 
 ## Despliegue 📦
 
-La aplicacion se desplego para su prueba y validacion en Heroku (https://www.heroku.com/)
+La aplicación se desplegó para su prueba y validación en Heroku : https://www.heroku.com/
 
-Para deplegar en Heroku Teniendo una cuenta en Heroku , ejecutar los siguientes comandos:
+**Para deplegar en Heroku:**
+
+Teniendo una cuenta en Heroku, ejecutar los siguientes comandos:
 ``` bash
 #Loguearce en Heroku
 $heroku login
@@ -95,20 +103,20 @@ $heroku ps
 $heroku open
 
 ```
-Para actualizar la aplicacion ya publicada
+Para actualizar la aplicación ya publicada:
 ``` bash
 $git push heroku main
 
 ```
 
-## Construido con 🛠️
+## Construído con 🛠️
 
 - Desarrollador en Rails 6.0.0
 - Ruby 3.0.0
 
 💎  **Dependencias / gemas**
 
-- [Device](https://rubygems.org/gems/devise/versions/4.2.0?locale=es) : Para Login y gestion de usarios
+- [Device](https://rubygems.org/gems/devise/versions/4.2.0?locale=es) : Para Login y gestión de usarios
 - [Rspec](https://rubygems.org/gems/rspec): Testing
 - [excon](https://rubygems.org/gems/excon): Cliente Api
 - [ruby-debug-ide](https://rubygems.org/gems/ruby-debug-ide): Debug
