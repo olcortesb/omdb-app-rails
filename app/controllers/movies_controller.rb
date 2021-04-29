@@ -18,7 +18,6 @@ class MoviesController < ApplicationController
     @movie = Movie.find_by(imdb_id: params[:id])
   end
 
-
   private
 
   def save_movie(movies)
