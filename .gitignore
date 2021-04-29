@@ -71,3 +71,4 @@ storage/*
 
 # Idea
 .idea
+/config/master.key

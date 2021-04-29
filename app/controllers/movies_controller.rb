@@ -54,7 +54,7 @@ class MoviesController < ApplicationController
 
   def find_movies(name,year)
     request_api(
-      "http://www.omdbapi.com/?apikey=9a044c5c&t=#{name}&y=#{year}"
+      "http://www.omdbapi.com/?apikey=#{Rails.application.credentials.omdb_api_key}&t=#{name}&y=#{year}"
     )
   end
 end
