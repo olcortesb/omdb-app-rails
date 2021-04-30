@@ -11,11 +11,11 @@ class MoviesController < ApplicationController
     return redirect_to root_path, alert: 'Película no encontrada' if (movies['Response'] == 'False')
 
     movie = save_movie(movies)
-    redirect_to movie_path(movie.imdb_id)
+    redirect_to movie_path(movie.id)
   end
 
   def show
-    @movie = Movie.find_by(imdb_id: params[:id])
+    @movie = Movie.find_by(id: params[:id])
   end
 
   private
