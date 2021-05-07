@@ -6,3 +6,8 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+
+RSpec::Core::RakeTask.new(:spec) do |t|
+    t.rspec_opts = '--format documentation'
+end
