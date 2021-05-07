@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe MetricsController , type: :controller do
+RSpec.describe MetricsController, type: :controller do
   login_user
 
   before do
@@ -44,7 +44,6 @@ RSpec.describe MetricsController , type: :controller do
       get :home
       expect(assigns[:year_runtime]).to be_a(Integer)
     end
-
   end
 
   describe 'GET #home' do
@@ -53,7 +52,4 @@ RSpec.describe MetricsController , type: :controller do
       expect(response).to render_template :home
     end
   end
-
 end
-
-
